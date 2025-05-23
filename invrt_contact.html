@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVRT - Contact & Subscribe</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles beyond Tailwind */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .hover-underline:hover {
+      text-decoration: underline;
+    }
+
+    .nav-shadow {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    .bg-off-white {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body class="font-light text-gray-900 bg-white antialiased">
+  <!-- Navigation - Ultra minimal with thought leadership focus -->
+  <nav id="navbar" class="fixed w-full bg-white bg-opacity-95 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="text-sm font-normal tracking-wide text-gray-900 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="mr-1 w-5 h-5 border border-gray-900"></div>
+            INVRT
+          </a>
+        </div>
+        <div class="hidden md:flex space-x-12 text-xs tracking-wide">
+          <a href="philosophy.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Philosophy</a>
+          <a href="clients.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Clients</a>
+          <a href="insights.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Insights</a>
+          <a href="advisory.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Advisory</a>
+        </div>
+        <div class="text-xs tracking-wide">
+          <a href="#subscribe" class="text-gray-900 hover:text-gray-600 transition-colors duration-200 mr-6">
+            Subscribe
+          </a>
+          <a href="#contact" class="px-4 py-2 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page header -->
+  <div class="pt-32 pb-16 border-b border-gray-100 bg-white">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-extralight leading-none tracking-tight text-gray-900 mb-6">
+          Connect With Us
+        </h1>
+        <p class="text-lg md:text-xl font-light text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Start a conversation about building enduring enterprises or subscribe to our latest thinking.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Form -->
+  <section id="contact" class="py-16 bg-off-white">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extralight tracking-tight text-gray-900 mb-6">
+          Start a Conversation
+        </h2>
+        <div class="w-12 h-px bg-gray-300 mx-auto mb-8"></div>
+        <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          Our relationships begin with a conversation about your vision for building an enterprise designed to endure. If our approach resonates with your values and aspirations, we'd welcome the opportunity to explore how we might work together.
+        </p>
+      </div>
+      
+      <div class="bg-white border border-gray-200 p-8">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-light text-gray-600 mb-1">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-light text-gray-600 mb-1">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+            
+            <div>
+              <label for="company" class="block text-sm font-light text-gray-600 mb-1">Company</label>
+              <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+            
+            <div>
+              <label for="role" class="block text-sm font-light text-gray-600 mb-1">Role</label>
+              <input type="text" id="role" name="role" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+          </div>
+          
+          <div>
+            <label for="interest" class="block text-sm font-light text-gray-600 mb-1">I'm interested in discussing:</label>
+            <select id="interest" name="interest" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+              <option value="">Please select...</option>
+              <option value="business">Compounding Business Value</option>
+              <option value="equity">Compounding Equity Value</option>
+              <option value="investor">Compounding Investor Value</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-light text-gray-600 mb-1">Message</label>
+            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200"></textarea>
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="px-8 py-3 bg-gray-900 text-white text-sm font-light hover:bg-gray-800 transition-colors duration-200">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Newsletter signup -->
+  <section id="subscribe" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-extralight tracking-tight text-gray-900 mb-6">
+          Join Our Thinking
+        </h2>
+        <div class="w-12 h-px bg-gray-300 mx-auto mb-8"></div>
+        <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          Weekly insights on building enterprises designed to improve with time. Receive frameworks and case studies from our work with multi-generational businesses and systems thinkers.
+        </p>
+      </div>
+      
+      <div class="bg-off-white border border-gray-200 p-8">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="subscribe-name" class="block text-sm font-light text-gray-600 mb-1">Name</label>
+              <input type="text" id="subscribe-name" name="name" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+            
+            <div>
+              <label for="subscribe-email" class="block text-sm font-light text-gray-600 mb-1">Email</label>
+              <input type="email" id="subscribe-email" name="email" class="w-full px-4 py-2 border border-gray-300 text-sm font-light focus:outline-none focus:border-gray-900 transition-colors duration-200">
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-sm font-light text-gray-600 mb-1">I'm interested in: (select all that apply)</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+              <div class="flex items-center">
+                <input type="checkbox" id="interest-systems" name="interests[]" value="systems" class="mr-2">
+                <label for="interest-systems" class="text-sm font-light text-gray-600">Systems Thinking</label>
+              </div>
+              
+              <div class="flex items-center">
+                <input type="checkbox" id="interest-governance" name="interests[]" value="governance" class="mr-2">
+                <label for="interest-governance" class="text-sm font-light text-gray-600">Governance & Succession</label>
+              </div>
+              
+              <div class="flex items-center">
+                <input type="checkbox" id="interest-quality" name="interests[]" value="quality" class="mr-2">
+                <label for="interest-quality" class="text-sm font-light text-gray-600">Quality & Durability</label>
+              </div>
+              
+              <div class="flex items-center">
+                <input type="checkbox" id="interest-capital" name="interests[]" value="capital" class="mr-2">
+                <label for="interest-capital" class="text-sm font-light text-gray-600">Capital Allocation</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="px-8 py-3 bg-gray-900 text-white text-sm font-light hover:bg-gray-800 transition-colors duration-200">
+              Subscribe
+            </button>
+            <p class="text-xs text-gray-500 mt-4">
+              Join 2,400+ founders and advisors. Unsubscribe anytime.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Other ways to connect -->
+  <section class="py-16 bg-off-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-extralight tracking-tight text-gray-900 mb-6">
+        Other Ways to Connect
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h3 class="text-lg font-light tracking-wide text-gray-900 mb-2">
+            Listen
+          </h3>
+          <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+            Explore our podcast series featuring conversations on systems thinking and business quality.
+          </p>
+          <a href="insights.html#podcast" class="text-sm tracking-wide text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 hover:text-gray-600 transition-colors duration-200">
+            The Art of Quality
+          </a>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-light tracking-wide text-gray-900 mb-2">
+            Read
+          </h3>
+          <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+            Browse our latest frameworks, case studies, and research on building enduring enterprises.
+          </p>
+          <a href="insights.html" class="text-sm tracking-wide text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 hover:text-gray-600 transition-colors duration-200">
+            Latest Insights
+          </a>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-light tracking-wide text-gray-900 mb-2">
+            Engage
+          </h3>
+          <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+            Explore our advisory services and see how we might help your enterprise improve with time.
+          </p>
+          <a href="advisory.html" class="text-sm tracking-wide text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 hover:text-gray-600 transition-colors duration-200">
+            Advisory Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer - Minimal and clean -->
+  <footer class="py-16 border-t border-gray-100 bg-white">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-sm font-light tracking-wide text-gray-900 mb-8 md:mb-0 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="mr-1 w-5 h-5 border border-gray-900"></div>
+            INVRT
+          </a>
+        </div>
+        <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+          <a href="philosophy.html" class="hover:text-gray-900 transition-colors duration-200">Philosophy</a>
+          <a href="clients.html" class="hover:text-gray-900 transition-colors duration-200">Clients</a>
+          <a href="insights.html" class="hover:text-gray-900 transition-colors duration-200">Insights</a>
+          <a href="advisory.html" class="hover:text-gray-900 transition-colors duration-200">Advisory</a>
+          <a href="contact.html" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+        <p class="text-xs tracking-wide text-gray-400">
+          © 2025 INVRT. Systems thinking for enduring enterprises.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll behavior for navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-shadow', 'bg-opacity-98');
+      } else {
+        navbar.classList.remove('nav-shadow', 'bg-opacity-98');
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80, // Adjust for navbar height
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

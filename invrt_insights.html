@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVRT - Insights</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles beyond Tailwind */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .hover-underline:hover {
+      text-decoration: underline;
+    }
+
+    .nav-shadow {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    .bg-off-white {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body class="font-light text-gray-900 bg-white antialiased">
+  <!-- Navigation - Ultra minimal with thought leadership focus -->
+  <nav id="navbar" class="fixed w-full bg-white bg-opacity-95 z-50 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="text-sm font-normal tracking-wide text-gray-900 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="mr-1 w-5 h-5 border border-gray-900"></div>
+            INVRT
+          </a>
+        </div>
+        <div class="hidden md:flex space-x-12 text-xs tracking-wide">
+          <a href="philosophy.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Philosophy</a>
+          <a href="clients.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Clients</a>
+          <a href="insights.html" class="text-gray-900 border-b border-gray-900 pb-1 transition-colors duration-200">Insights</a>
+          <a href="advisory.html" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">Advisory</a>
+        </div>
+        <div class="text-xs tracking-wide">
+          <a href="contact.html" class="text-gray-900 hover:text-gray-600 transition-colors duration-200 mr-6">
+            Subscribe
+          </a>
+          <a href="contact.html" class="px-4 py-2 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-200">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Page header -->
+  <div class="pt-32 pb-16 border-b border-gray-100 bg-white">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-extralight leading-none tracking-tight text-gray-900 mb-6">
+          Insights
+        </h1>
+        <p class="text-lg md:text-xl font-light text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Frameworks and research on building enterprises designed to improve with time.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Featured Insight -->
+  <section class="py-16 bg-off-white">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-widest text-gray-500 mb-4">FEATURED INSIGHT</p>
+        <h2 class="text-2xl md:text-3xl font-extralight tracking-tight text-gray-900 mb-6">
+          The Maintenance Premium: Why Care Creates More Value Than Innovation
+        </h2>
+        <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
+          Most businesses focus obsessively on the next breakthrough while neglecting the systems that compound value over time. 
+          We've studied century-old companies to understand how intentional maintenance creates exponential returns.
+        </p>
+        <div class="flex justify-center space-x-8 text-xs tracking-wide text-gray-500">
+          <span>12 min read</span>
+          <span>Published Jan 2025</span>
+          <span>Strategy & Systems</span>
+        </div>
+      </div>
+      
+      <div class="border border-gray-200 p-8 relative bg-white">
+        <!-- Subtle visual indicator of compounding value -->
+        <div class="absolute top-0 left-0 w-full h-1">
+          <div class="bg-gray-900 h-full w-1/3"></div>
+          <div class="bg-gray-700 h-full w-1/3 ml-1/3"></div>
+          <div class="bg-gray-500 h-full w-1/3 ml-2/3"></div>
+        </div>
+        
+        <blockquote class="text-lg font-light text-gray-700 leading-relaxed italic text-center mb-6">
+          "The greatest businesses, like the most enduring structures, are designed from the outset with regeneration in mind. 
+          They don't just maintain—they improve through maintenance."
+        </blockquote>
+        <div class="text-center">
+          <button class="text-sm tracking-wide text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 hover:text-gray-600 transition-colors duration-200">
+            Read Full Essay
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Latest Thinking - Clean grid -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="text-center mb-24">
+        <h2 class="text-3xl md:text-4xl font-extralight tracking-tight text-gray-900 mb-6">
+          Latest Thinking
+        </h2>
+        <div class="w-12 h-px bg-gray-300 mx-auto mb-8"></div>
+        <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
+          Frameworks and insights from our work with founders and families building for generations. Our research explores the patterns that lead to enduring excellence.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">ESSAY</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              Quality 3.0: The Evolution of Business Excellence
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              How the definition of quality has evolved from conformance to capability to character—and why only character-based quality compounds over generations.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>8 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+        
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">FRAMEWORK</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              The Four Types of Business Compounding
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              Capital, relationships, systems, and reputation—understanding how each compounds differently and why they're interdependent in creating multi-generational value.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>15 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+        
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">CASE STUDY</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              Patterns of Endurance: Lessons from Century-Old Companies
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              What we learned from studying 50 companies that have thrived for over 100 years, and the surprising patterns that emerge in their governance, culture, and capital allocation.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>22 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+        
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">RESEARCH</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              Natural Systems as Business Models
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              How biological systems provide templates for resilient business design, from adaptive networks to feedback mechanisms that allow self-healing.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>17 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+        
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">GUIDE</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              Multi-Generational Governance Frameworks
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              How to design decision-making structures that balance autonomy with alignment across generations while preserving core values.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>24 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+        
+        <article class="bg-off-white border border-gray-200 p-8 hover:shadow-sm transition-shadow duration-300">
+          <div class="mb-4">
+            <p class="text-xs tracking-widest text-gray-500 mb-2">ANALYSIS</p>
+            <h3 class="text-lg font-light tracking-wide text-gray-900 mb-3 leading-tight">
+              The Hidden Value of Maintenance Capital
+            </h3>
+            <p class="text-sm font-light text-gray-600 leading-relaxed mb-4">
+              Why markets systematically undervalue maintenance capital expenditures and how companies that prioritize them often outperform over decades.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-xs tracking-wide text-gray-500">
+            <span>11 min read</span>
+            <button class="text-gray-900 hover:text-gray-600 transition-colors duration-200 border-b border-gray-900 hover:border-gray-600 pb-px">
+              Read
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- The Art of Quality Podcast -->
+  <section class="py-24 bg-off-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-extralight tracking-tight text-gray-900 mb-6">
+          The Art of Quality
+        </h2>
+        <div class="w-12 h-px bg-gray-300 mx-auto mb-8"></div>
+        <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
+          Our podcast explores the patterns that lead to enduring excellence across disciplines—featuring conversations with leaders of century-old businesses, master craftspeople, and systems thinkers.
+        </p>
+      </div>
+      
+      <div class="border border-gray-200 p-8 mb-8 relative overflow-hidden bg-white">
+        <!-- Subtle audio waveform visualization -->
+        <div class="absolute bottom-0 left-0 w-full h-8 opacity-10">
+          <svg viewBox="0 0 100 20" class="w-full h-full">
+            <path d="M0,10 Q5,5 10,10 T20,10 T30,10 T40,10 T50,10 T60,10 T70,10 T80,10 T90,10 T100,10" stroke="black" fill="none" />
+            <path d="M0,10 Q5,15 10,10 T20,10 T30,10 T40,10 T50,10 T60,10 T70,10 T80,10 T90,10 T100,10" stroke="black" fill="none" />
+            <path d="M0,10 Q5,2 10,10 T20,10 T30,10 T40,10 T50,10 T60,10 T70,10 T80,10 T90,10 T100,10" stroke="black" fill="none" />
+            <path d="M0,10 Q5,18 10,10 T20,10 T30,10 T40,10 T50,10 T60,10 T70,10 T80,10 T90,10 T100,10" stroke="black" fill="none" />
+          </svg>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
+          <div>
+            <p class="text-xs tracking-widest text-gray-500 mb-2">LATEST EPISODE</p>
+            <h3 class="text-xl font-light tracking-wide text-gray-900 mb-2">
+              Building Systems That Learn: Lessons from Adaptive Organizations
+            </h3>
+            <p class="text-sm font-light text-gray-600">
+              A conversation with the head of a 150-year-old family business about how they've adapted through six generations while maintaining their core quality principles.
+            </p>
+          </div>
+          <div class="mt-4 md:mt-0 md:ml-8">
+            <button class="text-sm tracking-wide text-gray-900 border border-gray-900 px-4 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-200 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Listen
+            </button>
+          </div>
+        </div>
+        <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+          <span>45 min</span>
+          <span>Episode 23</span>
+          <span>Dec 2024</span>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="border border-gray-200 p-6 bg-white">
+          <p class="text-xs tracking-widest text-gray-500 mb-2">EPISODE 22</p>
+          <h3 class="text-lg font-light tracking-wide text-gray-900 mb-2">
+            The Craft of Quality: Lessons from Japanese Shokunin
+          </h3>
+          <p class="text-sm font-light text-gray-600 mb-4">
+            How a 400-year-old pottery tradition maintains quality through embodied knowledge and intergenerational teaching.
+          </p>
+          <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+            <span>38 min</span>
+            <span>Nov 2024</span>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 p-6 bg-white">
+          <p class="text-xs tracking-widest text-gray-500 mb-2">EPISODE 21</p>
+          <h3 class="text-lg font-light tracking-wide text-gray-900 mb-2">
+            Designing for Emergence: Complex Systems in Business
+          </h3>
+          <p class="text-sm font-light text-gray-600 mb-4">
+            How business leaders can design for positive emergent properties rather than trying to control every component.
+          </p>
+          <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+            <span>52 min</span>
+            <span>Oct 2024</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <button class="text-sm tracking-wide text-gray-900 border-b border-gray-900 pb-1 hover:border-gray-600 hover:text-gray-600 transition-colors duration-200">
+          Browse All Episodes
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Newsletter signup -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-extralight tracking-tight text-gray-900 mb-6">
+        Join Our Thinking
+      </h2>
+      <p class="text-base font-light text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
+        Receive our latest insights on building enterprises designed to improve with time.
+      </p>
+      <div class="flex justify-center">
+        <a href="contact.html" class="text-sm tracking-wide text-gray-900 border border-gray-900 px-6 py-3 hover:bg-gray-900 hover:text-white transition-colors duration-200">
+          Subscribe to Our Newsletter
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer - Minimal and clean -->
+  <footer class="py-16 border-t border-gray-100 bg-off-white">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="text-sm font-light tracking-wide text-gray-900 mb-8 md:mb-0 flex items-center">
+          <a href="index.html" class="flex items-center">
+            <div class="mr-1 w-5 h-5 border border-gray-900"></div>
+            INVRT
+          </a>
+        </div>
+        <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+          <a href="philosophy.html" class="hover:text-gray-900 transition-colors duration-200">Philosophy</a>
+          <a href="clients.html" class="hover:text-gray-900 transition-colors duration-200">Clients</a>
+          <a href="insights.html" class="hover:text-gray-900 transition-colors duration-200">Insights</a>
+          <a href="advisory.html" class="hover:text-gray-900 transition-colors duration-200">Advisory</a>
+          <a href="contact.html" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+        <p class="text-xs tracking-wide text-gray-400">
+          © 2025 INVRT. Systems thinking for enduring enterprises.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll behavior for navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-shadow', 'bg-opacity-98');
+      } else {
+        navbar.classList.remove('nav-shadow', 'bg-opacity-98');
+      }
+    });
+  </script>
+</body>
+</html>
