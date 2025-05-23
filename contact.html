@@ -272,7 +272,7 @@
   </section>
   
   <!-- Footer - Minimal and clean -->
-  <footer class="py-16 border-t border-gray-100 bg-off-white">
+  <footer class="py-16 border-t border-gray-100 bg-white">
     <div class="max-w-6xl mx-auto px-8">
       <div class="text-center mb-8">
         <p class="text-sm font-light text-gray-600 italic">
@@ -281,3 +281,34 @@
       </div>
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="text-sm font-light tracking-wide text-gray-900 mb-8 md:mb-0">
+          INVRT
+        </div>
+        <div class="flex space-x-8 text-xs tracking-wide text-gray-500">
+          <a href="philosophy.html" class="hover:text-gray-900 transition-colors duration-200">Philosophy</a>
+          <a href="clients.html" class="hover:text-gray-900 transition-colors duration-200">Clients</a>
+          <a href="insights.html" class="hover:text-gray-900 transition-colors duration-200">Insights</a>
+          <a href="advisory.html" class="hover:text-gray-900 transition-colors duration-200">Advisory</a>
+          <a href="contact.html" class="hover:text-gray-900 transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-100 text-center">
+        <p class="text-xs tracking-wide text-gray-400">
+          © 2025 INVRT. Building enduring quality through strategic advisory.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll behavior for navbar
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-shadow', 'bg-opacity-98');
+      } else {
+        navbar.classList.remove('nav-shadow', 'bg-opacity-98');
+      }
+    });
+  </script>
+</body>
+</html>
